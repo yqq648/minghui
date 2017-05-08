@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#f4fff2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 标记语言也是一种简单的语言，也有注释,
+      EditText是输入框视图
+      LinearLayout是容器
+      属性 id用来获取视图的id
+      hit输入框中用来提示用户的文字
+        alt+enter灯泡，遇到困难，紧急求助
+      -->
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/edit_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message" />
+    <!--  给按钮添加一个点击事件, 属性是onClick
+      每次用户点击按钮时，
+      此属性均会提示系统调用 Activity 中的 sendMessage() 方法。
+      -->
+    <Button
+        android:onClick="sendMessage"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"/>
+</LinearLayout>
