@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {//所有的界面， 都是
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
         setContentView(R.layout.activity_main);
     }
     //查询英文单词到中文翻译
