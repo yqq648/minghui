@@ -11,6 +11,30 @@
 
 
     <LinearLayout
+        android:background="#ffed9633"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <!-- textStyle是字体的大小样式, -->
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#fcfcfc"
+            android:textSize="30sp"
+            android:paddingLeft="90dp"
+            android:paddingTop="20dp"
+            android:text="@string/title"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:onClick="gengduo"
+            android:text="@string/gengduo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:paddingTop="10dp"
@@ -18,6 +42,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="80dp">
+
         <TextView
             android:textColor="#fafafa"
             android:textSize="22sp"
@@ -27,11 +52,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:background="#bae7e2"
+        android:background="#040505"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="90dp">
         <EditText
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
             android:id="@+id/et_english"
             android:hint="@string/english"
             android:layout_weight="1"
@@ -46,10 +73,23 @@
     </LinearLayout>
 
     <LinearLayout
-        android:background="#77f4bfab"
+        android:background="#000000"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="90dp">
-
+        <EditText
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:id="@+id/chinese"
+            android:hint="@string/chinese"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:onClick="chaxunChinese"
+            android:text="@string/chaxun"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
     </LinearLayout>
+
 </LinearLayout>
