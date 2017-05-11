@@ -6,9 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * 方法的覆盖,需要的条件
+ * 1.必须是父子关系
+ * 2.访问修饰词只能放大，不能缩小
+ */
 public class GendDuoActivity extends AppCompatActivity {
 
-    @Override
+    @Override//
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gend_duo);

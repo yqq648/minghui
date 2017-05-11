@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyDictionary</string>
+    <string name="english">Si prega di inserire una parola</string>
+    <string name="chaxun">inchiesta</string>
+    <string name="gengduo">più</string>
+    <string name="title">dizionario Phone</string>
+    <string name="chinese">Si prega di inserire cinese</string>
+</resources>
