@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 //TODO 标题中， 包含有多少个词库数目
 public class MainActivity extends AppCompatActivity {//所有的界面， 都是属于Activity的子类
 
@@ -51,7 +53,15 @@ public class MainActivity extends AppCompatActivity {//所有的界面， 都是
         TextView tv = (TextView) findViewById(R.id.tv);
         String[] englishs = TWordsEnglish.t_words;
         EditText et = (EditText) findViewById(R.id.chinese);
-        String chinese = et.getText().toString();
+        String chinese = et.getText().toString();//用户输入的中文
+        if ("".equals(chinese)){
+            //create a toast 确定
+            Toast.makeText(this, "请输入中文", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this,"xxx",0).show();
+            return;
+        }
+
+
         String[] words = TWordsChinese.t_words;
         boolean isFind = false;
         for(int i = 0;i<words.length;i++){

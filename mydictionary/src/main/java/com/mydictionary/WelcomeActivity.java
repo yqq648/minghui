@@ -39,7 +39,7 @@ public class WelcomeActivity extends AppCompatActivity {
         iv.startAnimation(animation);//每一个可以看见的控件视图，都可以打开动画
     }
     public void openMain(){
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,LoginActivity.class);
         startActivity(intent);
     }
 }

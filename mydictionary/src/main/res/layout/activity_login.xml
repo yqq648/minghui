@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mydictionary.LoginActivity">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ffffffff"
+        android:background="#4b5bec"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="欢迎登陆词典app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+         />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="请输入用户名"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <EditText
+            android:hint="请输入密码"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="#ffffff"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:text="登陆"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login" />
+
+        <Button
+            android:textColor="#ffffff"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:text="注册"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_register" />
+    </LinearLayout>
+
+</LinearLayout>
