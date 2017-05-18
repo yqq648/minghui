@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,7 +17,21 @@ public class MainActivity extends AppCompatActivity {//所有的界面， 都是
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //设置生词本的点击事件
+        Button btn_shengciben = (Button) findViewById(R.id.btn_shengciben);
+        btn_shengciben.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDicBook();
+            }
+        });
     }
+
+    private void openDicBook() {
+        Intent intent = new Intent(MainActivity.this,DicBookActivity.class);
+        startActivity(intent);
+    }
+
     //查询英文单词到中文翻译
     public void chaXun(View view) {
         String[] chinese = TWordsChinese.t_words;

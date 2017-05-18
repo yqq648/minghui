@@ -1,1 +1,1 @@
-include ':app', ':mydictionary'
+include ':mydictionary'
